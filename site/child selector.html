@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Combining Selector </title>
+    <style>
+        /* any article element which is a dirct child og a section
+        element
+        */
+        section > article{
+            color: green;
+            font-size: 24px;
+        }
+        section > h2{
+            color:green;
+        }
+
+    </style>
+</head>
+<body>
+    <h2>child direct selector </h2>
+    <section>
+        <h2>Subheading 1</h2>
+        <div>
+            <article>
+                Aritcle which inside div,
+                which is inside selection
+            </article>
+        </div>
+    </section>
+    <section>
+        <article>
+            Article as a direct child of the selection element.
+        </article>
+    </section>
+    <h2>Subheading 2</h2>
+    
+</body>
+</html>
